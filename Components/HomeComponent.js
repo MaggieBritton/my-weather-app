@@ -88,6 +88,43 @@ const Forecast = () => {
     )
 };
 
+const CurrentDetails = () => {
+    return (
+        <View>
+            <View>
+                <View>
+                    <Text>Sunrise</Text>
+                    <Text>7:12 am</Text>
+                </View>
+                <View>
+                    <Text>Sunset</Text>
+                    <Text>8:23 pm</Text>
+                </View>
+            </View>
+            <View>
+                <View>
+                    <Text>Precipitation</Text>
+                    <Text>0%</Text>
+                </View>
+                <View>
+                    <Text>Humidity</Text>
+                    <Text>75%</Text>
+                </View>
+            </View>
+            <View>
+                <View>
+                    <Text>Wind</Text>
+                    <Text>10 mph</Text>
+                </View>
+                <View>
+                    <Text>Pressure</Text>
+                    <Text>1000 hPa</Text>
+                </View>
+            </View>
+        </View>
+    )
+};
+
 
 const Home = () => {
   return (
@@ -95,6 +132,7 @@ const Home = () => {
         <DateLocation/>
         <CurrentTemp />
         <Forecast />
+        <CurrentDetails />
     </View>
   )
 };

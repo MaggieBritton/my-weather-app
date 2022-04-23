@@ -4,11 +4,9 @@ import HomeComponent from './Components/HomeComponent';
 export default function App() {
   return (
     <View style={styles.container}>
-      <ImageBackground source={require('./assets/images/sunny.jpg')} style={styles.backgroundImage}>
-        <View style={styles.homeContainer}>
-          <HomeComponent />
-        </View>
-      </ImageBackground>
+      <View style={styles.homeContainer}>
+        <HomeComponent />
+      </View>
     </View>
   );
 }
@@ -16,11 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  backgroundImage: {
-    flex: 1,
-    resizeMode: 'cover',
-    justifyContent: 'center'
+    backgroundColor: '#5c0087'
   },
   homeContainer: {
     flex: 1,
