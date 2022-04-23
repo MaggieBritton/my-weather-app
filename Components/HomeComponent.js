@@ -44,7 +44,46 @@ const Forecast = () => {
                     <Text>38</Text>
                 </View>
             </View>
-
+            <View style={styles.dailyForecastContainer}>
+                <Text>Friday</Text>
+                <WbSunnyOutlinedIcon />
+                <View style={styles.forecastTempsContainer}>
+                    <Text style={{marginRight: 20}}>65</Text>
+                    <Text>38</Text>
+                </View>
+            </View>
+            <View style={styles.dailyForecastContainer}>
+                <Text>Saturday</Text>
+                <WbSunnyOutlinedIcon />
+                <View style={styles.forecastTempsContainer}>
+                    <Text style={{marginRight: 20}}>65</Text>
+                    <Text>38</Text>
+                </View>
+            </View>
+            <View style={styles.dailyForecastContainer}>
+                <Text>Sunday</Text>
+                <WbSunnyOutlinedIcon />
+                <View style={styles.forecastTempsContainer}>
+                    <Text style={{marginRight: 20}}>65</Text>
+                    <Text>38</Text>
+                </View>
+            </View>
+            <View style={styles.dailyForecastContainer}>
+                <Text>Monday</Text>
+                <WbSunnyOutlinedIcon />
+                <View style={styles.forecastTempsContainer}>
+                    <Text style={{marginRight: 20}}>65</Text>
+                    <Text>38</Text>
+                </View>
+            </View>
+            <View style={styles.dailyForecastContainer}>
+                <Text>Tuesday</Text>
+                <WbSunnyOutlinedIcon />
+                <View style={styles.forecastTempsContainer}>
+                    <Text style={{marginRight: 20}}>65</Text>
+                    <Text>38</Text>
+                </View>
+            </View>
         </View>
     )
 };
@@ -71,9 +110,11 @@ const styles = StyleSheet.create({
     },
     date: {
         fontSize: 16,
+        color: '#fff'
     },
     location: {
         fontSize: 24,
+        color: '#fff',
         paddingTop: 10
     },
     currentTempContainer: {
@@ -84,10 +125,12 @@ const styles = StyleSheet.create({
     },
     currentTemp: {
         fontSize: 72,
+        color: '#fff',
         fontWeight: '500'
     },
     degree: {
         fontSize: 24,
+        color: '#fff',
         paddingTop: 10
     },
     highLowContainer: {
@@ -98,13 +141,17 @@ const styles = StyleSheet.create({
         
     },
     highLowText: {
-        fontSize: 16
+        fontSize: 16, 
+        color: '#fff'
+    },
+    forecastContainer: {
+        marginTop: 100,
     },
     dailyForecastContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 50
+        marginBottom: 20
     },
     forecastTempsContainer: {
         flexDirection: 'row',

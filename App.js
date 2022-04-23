@@ -1,16 +1,29 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ImageBackground } from 'react-native';
 import HomeComponent from './Components/HomeComponent';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomeComponent />
+      <ImageBackground source={require('./assets/images/sunny.jpg')} style={styles.backgroundImage}>
+        <View style={styles.homeContainer}>
+          <HomeComponent />
+        </View>
+      </ImageBackground>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    margin: 25
+    flex: 1,
   },
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'cover',
+    justifyContent: 'center'
+  },
+  homeContainer: {
+    flex: 1,
+    margin: 20
+  }
 })
