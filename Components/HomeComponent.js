@@ -90,33 +90,31 @@ const Forecast = () => {
 
 const CurrentDetails = () => {
     return (
-        <View>
-            <View>
-                <View>
+        <View style={styles.currentDetailsContainer}>
+            <View style={styles.leftColContainer}>
+                <View style={styles.textContainer}>
                     <Text>Sunrise</Text>
                     <Text>7:12 am</Text>
                 </View>
-                <View>
+                <View style={styles.textContainer}>
                     <Text>Sunset</Text>
                     <Text>8:23 pm</Text>
                 </View>
-            </View>
-            <View>
-                <View>
+                <View style={styles.textContainer}>
                     <Text>Precipitation</Text>
                     <Text>0%</Text>
                 </View>
-                <View>
+            </View>
+            <View style={styles.rightColContainer}>
+                <View style={styles.textContainer}>
                     <Text>Humidity</Text>
                     <Text>75%</Text>
                 </View>
-            </View>
-            <View>
-                <View>
+                <View style={styles.textContainer}>
                     <Text>Wind</Text>
                     <Text>10 mph</Text>
                 </View>
-                <View>
+                <View style={styles.textContainer}>
                     <Text>Pressure</Text>
                     <Text>1000 hPa</Text>
                 </View>
@@ -183,16 +181,35 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
     forecastContainer: {
-        marginTop: 100,
+        paddingTop: 100,
+        paddingBottom: 40,
+        paddingLeft: 35,
+        paddingRight: 35
     },
     dailyForecastContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center',
-        marginBottom: 20
+        alignItems: 'center'
     },
     forecastTempsContainer: {
         flexDirection: 'row',
+        paddingBottom: 20
+    },
+    currentDetailsContainer: {
+        backgroundColor: '#fffbfb25',
+        flexDirection: 'row',
+        paddingLeft: 35,
+        paddingRight: 35,
+        paddingBottom: 40
+    },
+    rightColContainer: {
+        flex: 1
+    },
+    leftColContainer: {
+        flex: 1
+    },
+    textContainer: {
+        paddingTop: 40,
     }
 });
 

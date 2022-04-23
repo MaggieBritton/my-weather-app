@@ -1,4 +1,4 @@
-import { StyleSheet, View, ImageBackground } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import HomeComponent from './Components/HomeComponent';
 
 export default function App() {
@@ -18,6 +18,5 @@ const styles = StyleSheet.create({
   },
   homeContainer: {
     flex: 1,
-    margin: 20
   }
 })
